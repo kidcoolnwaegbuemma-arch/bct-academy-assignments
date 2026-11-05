@@ -1,5 +1,5 @@
 // Question 2
-const score = 20;
+const score = 1000;
 
 if (score < 0 || score > 100) {
     console.log("Invalid score");
