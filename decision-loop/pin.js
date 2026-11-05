@@ -25,11 +25,11 @@ async function checkPin(){
     numberOfTries--;
     enteredPin = await ask("enter your pin: ");
     if (enteredPin !== correctPin) {
-      console.log(`incorrect pin. you have ${numberOfTries} left.`)
+      console.log(`incorrect pin. you have ${numberOfTries} tries left.`)
     }
   };
 
-  if (numberOfTries > 0) {
+  if (numberOfTries > 0 || enteredPin === correctPin) {
     console.log("Pin accepted. Welcome")
   } else {
     console.log("Sorry, you've exhausted your number of tries")
