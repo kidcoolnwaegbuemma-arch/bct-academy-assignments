@@ -1,0 +1,94 @@
+/* 2. */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* justify content: Aligns items along the main axis */
+/* align items: align items along the cross axis */
+
+/* 4. align-items:center; and display:flex */
+/* flex-wrap allows items to move onto another line when there is not enough space. */
+
+/* section b */
+/* 6.A..Flexbox is suitable for arranging navigation bars, buttons and items in a row or column */
+/* 6.B it creates three equal columns that share the available space */
+/* c  It means a grid column cannot be smaller than 200px but can grow to take up available space. */
+/* d. website dashboards or image */
+
+/* question 7  */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* question 8  */
+/* grid-template-areas defines where different sections of a webpage should appear.
+grid-area assigns each section to its named position. */
+
+/* question 9 */
+/* a) flexbox */
+/* b) grid */
+/* c) flexbox */
+
+/* section c  */
+/* 10. The viewport meta tag tells the browser to adjust the webpage to the width of the device. */
+/* 11. Mobile-first design means designing a website for smaller screens first before adjusting it for larger screens. */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* question 12  */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* questio 13 */
+/* a */
+.element {
+  width: 100%;
+  max-width: 500px;
+}
+/* b  */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* d  */
+.element {
+  width: 100%;
+}
+
+/* Question 14 */
+/* srcset: Provides different image sizes for different screen resolutions.
+sizes: Tells the browser how much space the image will occupy on the page.
+width: Defines the image width.
+height: Defines the image height and helps prevent layout shifting.
+loading="lazy": Delays loading images until they are close to appearing on the screen. */
+
+/* Question 15 */
+/* 1.Use large buttons and touch targets so users can easily tap them on mobile devices.
+2.Respect reduced-motion preferences by reducing unnecessary animations for users who prefer less movement. */
+
+/* question 16 */
