@@ -1,0 +1,42 @@
+<form>
+
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name"
+           name="name" required>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email"
+           name="email" required>
+
+    <!-- Phone -->
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone"
+           name="phone"
+           pattern="[0-9]{10,15}"
+           aria-describedby="phone-hint">
+
+    <small id="phone-hint">
+        Enter 10 to 15 digits.
+    </small>
+
+    <!-- Topic -->
+    <label for="topic">Topic:</label>
+    <select id="topic" name="topic">
+        <option value="">Choose a topic</option>
+        <option value="support">Support</option>
+        <option value="enquiry">Enquiry</option>
+    </select>
+
+    <!-- Message -->
+    <label for="message">Message:</label>
+    <textarea id="message"
+              name="message"
+              minlength="20"
+              required></textarea>
+
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+
+</form>
