@@ -1,0 +1,24 @@
+:root { font-family: Arial, sans-serif; color: #20242a; background: #f2f4f8; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 24px; }
+.app { max-width: 760px; margin: 30px auto; padding: 28px; background: white; border-radius: 18px; box-shadow: 0 8px 30px rgba(0,0,0,.07); }
+.eyebrow { letter-spacing: 2px; font-size: 12px; color: #667085; }
+h1 { margin-bottom: 8px; }
+button { border: 0; border-radius: 8px; padding: 10px 14px; margin: 4px; cursor: pointer; background: #20242a; color: white; font: inherit; }
+button:focus-visible { outline: 3px solid #8ab4f8; outline-offset: 2px; }
+#add-suggested { background: #245caa; margin: 18px 0; }
+#song-list { list-style: none; padding: 0; }
+.song { display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 1px solid #e3e7ed; border-radius: 12px; padding: 14px; margin: 10px 0; }
+.song-info { display: grid; gap: 4px; min-width: 0; }
+.song-title { font-weight: bold; overflow-wrap: anywhere; }
+.song-artist, .song-duration { color: #667085; font-size: 14px; overflow-wrap: anywhere; }
+.song.liked { border-color: #67a77a; background: #f0faf2; }
+.like-button[aria-pressed="true"] { background: #267342; }
+.remove-button { background: #6b7280; }
+.empty-state { color: #667085; font-style: italic; }
+@media (max-width: 480px) {
+  body { padding: 8px; }
+  .app { margin: 8px auto; padding: 16px; }
+  .song { align-items: flex-start; flex-direction: column; }
+  .song-actions { display: flex; flex-wrap: wrap; }
+}

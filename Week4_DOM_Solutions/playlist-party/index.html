@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist Party</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <p class="eyebrow">YOUR SHARED MUSIC SPACE</p>
+      <h1>Playlist Party</h1>
+      <p id="song-count">0 songs</p>
+      <p id="total-duration">Total duration: 0:00</p>
+    </header>
+    <button id="add-suggested" type="button">Add a suggested song</button>
+    <p id="empty-state" class="empty-state">Your playlist is empty. Add a song to get started.</p>
+    <ul id="song-list" aria-label="Playlist"></ul>
+  </main>
+
+  <template id="song-template">
+    <li class="song">
+      <div class="song-info">
+        <span class="song-title"></span>
+        <span class="song-artist"></span>
+        <span class="song-duration"></span>
+      </div>
+      <div class="song-actions">
+        <button class="like-button" type="button" aria-pressed="false">Like</button>
+        <button class="remove-button" type="button">Remove</button>
+      </div>
+    </li>
+  </template>
+</body>
+</html>

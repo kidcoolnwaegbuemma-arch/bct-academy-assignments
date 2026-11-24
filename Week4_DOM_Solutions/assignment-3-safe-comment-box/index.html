@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Comment Box</title>
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Safe Comment Box</h1>
+      <form id="comment-form">
+        <label for="comment">Write a comment:</label>
+        <br />
+        <input id="comment" name="comment" required maxlength="200" /><span
+          id="counter"
+          >0/200</span
+        >
+
+        <br />
+        <button type="submit">Post</button>
+        <button type="button" id="clear">Clear comments</button>
+      </form>
+      <section>
+        <h2>Comments</h2>
+        <div id="comments"></div>
+      </section>
+    </main>
+  </body>
+</html>
